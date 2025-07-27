@@ -1,0 +1,7 @@
+crewai
+langsmith
+langchain
+ollama
+transformers
+jinja2
+python-dotenv

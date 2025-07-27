@@ -1,0 +1,36 @@
+agents:
+  - name: planner_agent
+    role: Travel Planner
+    goal: Plan a {{days}}-day trip to {{destination}} within a ${{budget}} budget
+    backstory: >
+      You are a seasoned travel planner focused on affordable international travel.
+    verbose: true
+
+  - name: budget_agent
+    role: Budget Analyst
+    goal: Ensure the travel plan for {{destination}} is within the ${{budget}} limit
+    backstory: >
+      Expert in cost analysis for trips, with a focus on saving money.
+    verbose: true
+
+  - name: critic_agent
+    role: Critic Reviewer
+    goal: Review the trip and suggest improvements or point out risks
+    backstory: >
+      Known for catching oversights and enhancing user experiences.
+    verbose: true
+
+tasks:
+  - agent: planner_agent
+    description: Plan a {{days}}-day trip to {{destination}} under ${{budget}}
+
+  - agent: budget_agent
+    description: Review if the trip is under ${{budget}} and highlight any overspending
+
+  - agent: critic_agent
+    description: Critique the plan and budget for logic, completeness, and realism
+
+
+llm:
+  provider: ollama
+  model: llama3.2:3b
