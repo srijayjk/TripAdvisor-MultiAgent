@@ -71,5 +71,5 @@ streamlit run streamlite_app.py
 Feel free to fork and contribute! Open an issue or PR with ideas for tools, destinations, or agent upgrades.
 
 ## 💡 Credits
-Developed by [Your Name], built with love for travel and open-source AI.
+Developed by Srijay Kolvekar, built with love for travel and open-source AI.
 
